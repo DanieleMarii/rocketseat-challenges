@@ -1,0 +1,242 @@
+:root {
+    font-size: 62.5%;
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    background: var(--background);
+}
+
+/* mobile */
+.img-asside {
+    display: none;
+}
+
+.container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+header {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+main>h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: var(--text-title);
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+main>h1>img {
+    margin-right: 1rem;
+}
+
+.legenda-form {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--text-base);
+    /* margin-top: 7rem; */
+
+}
+
+form {
+    margin-top: 2.7rem;
+}
+
+.label-info {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-base);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A9AFB9;
+
+    border: 1px solid #868686;
+    border-radius: 4px;
+    width: 80%;
+    padding: 1.4rem 0 1.4rem 3.7rem;
+    margin-bottom: 2rem;
+    display: inline;
+}
+
+.email-icon {
+    background-image: url(../img/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 1.2rem;
+}
+
+.email-icon:focus {
+    outline: none;
+    background-image: url(../img/mail-focus.svg);
+    border: 1px solid var(--primary-color);
+
+}
+
+.senha-icon {
+    background-image: url(../img/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 1.2rem;
+}
+
+.senha-icon:focus {
+    outline: none;
+    background-image: url(../img/lock-focus.svg);
+    border: 1px solid var(--primary-color);
+}
+
+.senha {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    left: 80%;
+    top: 45%;
+}
+
+.lembre-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    /* gap: 3rem; */
+    justify-content: space-between;
+}
+
+.lembre {
+    display: flex;
+}
+
+.lembre>input {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    width: 0;
+    height: 0;
+}
+
+.lembre>input:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #868686;
+    border-radius: 4px;
+    background-color: var(--background);
+}
+
+.lembre>input:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.lembre>input:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #473404;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2.5px;
+    left: 6px;
+}
+
+.lembre>label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: var(--text-base);
+    margin-left: 3rem;
+}
+
+.lembre-container>a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: var(--primary-color);
+
+
+}
+
+.botao {
+    margin-top: 2rem;
+    border: 0;
+    width: 80vw;
+    background-color: var(--primary-color);
+    border-radius: 0.4rem;
+    padding: 1.2rem 2.4rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #473404;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+
+}
+
+.criar-conta{
+    width: 80vw;
+    text-align: center;
+    margin-top: 1.4rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: var(--primary-color);
+}
+
+.criar-conta > span > a{
+    color: var(--primary-color);
+    font-weight: 600;
+}
