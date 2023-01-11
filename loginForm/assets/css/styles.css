@@ -20,14 +20,23 @@
     display: none;
 }
 
-.container {
+/* .container {
     margin-left: 2rem;
     margin-right: 2rem;
-}
+} */
 
 header {
     margin-top: 4rem;
     margin-bottom: 3rem;
+}
+
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+main{
+    /* box-sizing: border-box; */
+    width: 100%;
 }
 
 main>h1 {
@@ -57,6 +66,7 @@ main>h1>img {
 }
 
 form {
+    width: 100%;
     margin-top: 2.7rem;
 }
 
@@ -72,6 +82,7 @@ form {
 }
 
 .form-input {
+    box-sizing: border-box;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -81,11 +92,16 @@ form {
 
     border: 1px solid #868686;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
+    /* width: 33.5rem; */
     padding: 1.4rem 0 1.4rem 3.7rem;
     margin-bottom: 2rem;
     display: inline;
 }
+
+/* .email ,.senha{
+    width: 33.5rem;
+} */
 
 .email-icon {
     background-image: url(../img/mail.svg);
@@ -118,16 +134,14 @@ form {
 
 .eye-icon {
     position: absolute;
-    left: 80%;
+    left: 90%;
     top: 45%;
 }
 
 .lembre-container {
-    width: 80vw;
+    /* width: 90vw; */
     display: flex;
     flex-direction: row;
-    /* justify-content: flex-start; */
-    /* gap: 3rem; */
     justify-content: space-between;
 }
 
@@ -207,7 +221,7 @@ form {
 .botao {
     margin-top: 2rem;
     border: 0;
-    width: 80vw;
+    width: 100%;
     background-color: var(--primary-color);
     border-radius: 0.4rem;
     padding: 1.2rem 2.4rem;
@@ -223,8 +237,8 @@ form {
 
 }
 
-.criar-conta{
-    width: 80vw;
+.criar-conta {
+    /* width: 80vw; */
     text-align: center;
     margin-top: 1.4rem;
 
@@ -236,7 +250,28 @@ form {
     color: var(--primary-color);
 }
 
-.criar-conta > span > a{
+.criar-conta>span>a {
     color: var(--primary-color);
     font-weight: 600;
+}
+
+@media (min-width: 900px) {
+    .img-asside {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    main{
+        width: 50vw;
+        background-color: var(--form-background);
+    }
+
+    form{
+        width: 50%;
+    }
+
 }
